@@ -1,0 +1,110 @@
+@import url(https://fonts.googleapis.com/css2?family=Muli:wght@100;200;300;400;500;600;800;900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;800;900&display=swap);
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("2.jpg");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Muli' ;
+    font-weight:100;
+}
+
+.container {
+    display: grid;
+  margin-top: 80px;
+
+    place-items: center;
+    place-content: center;
+    z-index: 2;
+    display: flex;
+   text-align: center;
+}
+.container input{
+    width: 100%;
+    height: 60px;
+    border-radius: 50px;   
+    border: none;
+    color: #000000;
+    font-size: 24px;
+    padding: 20px;
+  
+}
+input:focus{
+    outline: none;
+}
+.container button{
+    width: 40%;
+    height: 60px;
+ 
+    border-radius: 50px;   
+    border: none;
+    color: #fff;
+    font-size: 24px;
+    padding: 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf, #eedd44);
+    transition: 0.5s;
+}
+.container button:hover{
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf, #eedd44);
+    transform: scale(1.1);
+}
+.container button:active{
+    transform: scale(0.9);
+}
+ h2 {
+    font-weight: 500;
+    font-size: 3rem;
+    margin-top:25vh;
+    text-align: center;
+    background: linear-gradient(
+        to right, #f32170, #ff6b08,
+         #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+
+
+}
+
+.list{
+ margin: 20px 0;   
+ display: flex;
+ justify-content: space-around;
+ flex-wrap: wrap;
+
+}
+.list a {
+    margin: 20px 50px;
+text-decoration: none;
+color: white;
+font-size: 1rem;
+}
+.list img {
+    width: 48px;
+    height: 48px;
+ 
+}
+.list a img{
+    background-color: black;
+    border-radius: 50px;
+    padding: 10px;
+    
+}
+.list a p{
+    /* font-family: 'Montserrat', sans-serif; */
+    font-weight: 100;
+    
+}

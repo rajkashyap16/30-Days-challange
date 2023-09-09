@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Mulish', sans-serif;
+}
+body{
+    background-color: steelblue;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height:100vh ;
+}
+.container{
+    background-color: rgba(0, 0, 0, 0.4)  ;
+    padding: 20px 40px;
+    border-radius: 5px;
+}
+.btn{
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: lightblue;
+    padding: 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    transform: scale(0.98);
+}
+.text{
+    margin-top: 30px;
+}
+
+.container h1{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container a{
+    text-decoration: none;
+    color: lightblue;
+}
+
+.form-control{
+    position: relative;
+    margin: 20px 0 40px;
+    width: 300px;
+}
+
+.form-control input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px white solid;
+    display: block;
+    width: 100% ;
+    padding: 15px 0;
+    font-size: 18px;
+    color: white;
+
+}
+
+.form-control input:focus ,
+ .form-control input:valid{
+    outline :none !important;
+}
+
+.form-control label{
+    position: absolute;
+    top:15px; 
+    left: 0;
+    cursor: text;
+    transition:  all 0.4s ease;
+}
+.form-control input:focus + label{
+    transform: translateY(-30px);
+}

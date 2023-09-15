@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess the Number</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Header -->
+   
+    
+    <div class="container">
+        <button type="submit" id="reset" class="btn ">Reset Game</button>
+        <h1>Guess the Number</h1>
+        <p>Guess a number between 1 and 20</p>
+    <div class="correctGuess"><Span class="CorrectAns">?</Span></div>
+       <div class="container-box">
+         <!-- Create an input field to enter guess-->
+         <form action="">
+
+            <label for="guessInput">Enter a guess: </label> <br>
+            <input type="number" id="guessInput" class="guessField"> <br>
+            <button type="submit" id="guessSubmit" class="btn full">Guess</button>
+            <!-- Score -->
+        </form>
+        <ul>
+            <li>
+                <!-- Display score here -->
+                <p class="message">Guesses : <span id="guess"></span></p>
+
+            </li>
+            <li>
+                <!-- Display the message here -->
+                <p class="message">Last guess : <span id="lastResult"></span></p>
+            </li>
+            <li>
+                <!-- Display the message here -->
+                <p class="message">High / Low : <span id="highOrLow"></span></p>
+            </li>
+            <li>
+                <!-- Display the message here -->
+                <p class="score">High Score: <span id="score"></span></p>
+            </li>
+          
+
+        </ul>
+       </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
